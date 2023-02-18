@@ -1,0 +1,2475 @@
+/* RWD Settings */
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
+
+/* Pretty standard setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This is for all the h-texts to have a uniform font */
+h1, h2, h3, h4 {
+  font-family: 'Crimson Text', serif;
+}
+
+p, a, button {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* This section is for the menu section */
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 530px; /*This needs to be fixed */
+  
+  @media (max-width: $laptop) {
+    gap: 320px;
+  }
+  
+  
+  @media (min-width: 700px) {
+    gap: 250px;
+  }
+}
+
+/* This section is for the hamburger SVG */
+.left-section {
+  float: left;
+  
+  svg {
+    cursor: pointer;
+  }
+}
+
+
+/* This section holds the NYT PNG image */
+.middle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  img {
+    cursor: pointer;
+  }
+}
+
+/* This section holds the people-fill SVG image */
+.right-section {
+  float: right;
+  align-items: center;
+  justify-content: center;
+  
+  svg {
+    cursor: pointer;
+  }
+}
+
+/* Literally, everything in peripheral vision */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* This section holds the main Title at the viewport */
+.title-section {
+  height: 100vh;
+  width: 100vw;
+  background: url("https://imgur.com/yW92TdW.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px; /* RWD */
+  /*margin-top: -20px; */
+  
+  @media (max-width: $laptop) {
+    font-size: 55px;
+  }
+  
+  @media (max-width: $tablet) {
+    font-size: 40px;
+  }
+  
+  @media (max-width: 1023px) {
+    font-size: 40px;
+  }
+    
+}
+
+/* This section is for the subtitle underneath */
+.subtitle {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 800px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* This section is for the main image */
+.image-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  img {
+    width: 800px; /*RWD*/
+    cursor: pointer;
+  }
+}
+
+/*This section is for the first paragraphs */
+.first-paragraphs {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+}
+
+.text-hover {
+  font-size: 24px;
+}
+
+/* The artist section */
+.column-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center; /* Hmm */
+}
+
+/* This section will house the image of the artist */
+.artist {
+  height: 350px;
+  width: 250px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.8s;
+  
+  &:hover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+}
+
+/* A$AP Rocky */
+.image-1 {
+  background: url("https://i.pinimg.com/564x/70/db/d6/70dbd63426e9b75c7c6bc6955fa0beb8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/1c/9f/a3/1c9fa37f8c81ae91a4ea8e4aec182e90.jpg");
+    background-size: cover;
+  }
+}
+
+/* Tyler, The Creator */
+.image-2 {
+  background: url("https://i.pinimg.com/736x/0a/c2/16/0ac21676e8a5a49dcc2ba14315eabe13.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/9a/97/8c/9a978c077b1d5fa61720c95c9e49c7ad.jpg");
+    background-size: cover;
+  }
+}
+
+/* Playboi Carti */
+.image-3 {
+  background: url("https://i.pinimg.com/564x/30/ef/58/30ef58438e54d2e15ca34d3301f4717b.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/c0/26/39/c0263958fd78974013d25a7dea76f3ae.jpg");
+    background-size: cover;
+  }
+}
+
+/* Ken Carson */
+.image-4 {
+  background: url("https://i.pinimg.com/564x/38/10/17/381017a1b89cb04940190a07ded6c004.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/e3/90/64/e39064cd15c31e54091806744f9e2118.jpg");
+    background-size: cover;
+  }
+}
+
+/* Lewis Hamilton */
+.image-5 {
+  background: url("https://i.pinimg.com/564x/ed/3e/c5/ed3ec57b62bbc01890cbb9ed0d5f291f.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/55/00/19/5500194133db7c7a65f69fb3643832d6.jpg");
+    background-size: cover;
+  }
+}
+
+/* Alton Mason */
+.image-6 {
+  background: url("https://i.pinimg.com/564x/6a/e6/0d/6ae60d21b9dadde27f8165eb9efcd22f.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/e2/64/f2/e264f25eda718ecb7c8fcaa13ba155c8.jpg");
+    background-size: cover;
+  }
+}
+
+/* A$AP Nast */
+.image-7 {
+  background: url("https://i.pinimg.com/564x/fe/5d/a1/fe5da121c9dbe1a6c1bf452aa6fa1031.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/82/d4/d0/82d4d0a799acca2bda31489a9425aee5.jpg");
+    background-size: cover;
+  }
+}
+
+/* Ye */
+.image-8 {
+  background: url("https://i.pinimg.com/564x/b0/45/15/b04515c1cbcb01310a0f925b19ef147b.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/de/7f/60/de7f6050b95d72387499440202d8ff8b.jpg");
+    background-size: cover;
+  }
+}
+
+/* Rihanna */
+.image-9 {
+  background: url("https://i.pinimg.com/564x/85/39/00/85390070df5db4f904bbacd57e96ae20.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/cb/cf/10/cbcf10741ecb4ce0018168a6990d3230.jpg");
+    background-size: cover;
+  }
+}
+
+/* Jalen Green */
+.image-10 {
+  background: url("https://i.pinimg.com/564x/9c/9b/f2/9c9bf228abb98379de6f45cca0cf5617.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/2f/98/da/2f98da0a96b0033f1d42344a38217148.jpg");
+    background-size: cover;
+  }
+}
+
+/* Rosalia */
+.image-11 {
+  background: url("https://i.pinimg.com/564x/ec/6c/9e/ec6c9e35af3553a393d39f571e3c5b55.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/e9/3f/a5/e93fa538caca07074e09f167f5f61d4e.jpg");
+    background-size: cover;
+  }
+}
+
+/* Jacquemus */
+.image-12 {
+  background: url("https://i.pinimg.com/564x/ed/bc/63/edbc6350753a4393b982bf5e7c75c23d.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/67/4d/9e/674d9eb9c81343fabe6165b16d06a765.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Travis Scott */
+.image-13 {
+  background: url("https://i.pinimg.com/564x/f2/55/5a/f2555a6fe0f5a69459da9cb6f28427d9.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/b5/8c/d2/b58cd2b8fa1076fb6057a65cb5f3514c.jpg");
+    background-size: cover;
+  }
+}
+
+/* Future  no.14 */
+.image-14 {
+  background: url("https://i.pinimg.com/564x/1a/a8/44/1aa8440a642cee8bf5d79a199291be3e.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/f7/fa/65/f7fa65d15ea0b1ce57c58901893898a4.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Kendrick Lamar */
+.image-15 {
+  background: url("https://i.pinimg.com/564x/94/e7/e1/94e7e171f7727733cfd8a8d11c469b63.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/c8/01/67/c8016767f90a8e059a62e312d70a2de4.jpg");
+    background-size: cover;
+  }
+}
+
+/* The Weeknd */
+.image-16 {
+  background: url("https://i.pinimg.com/564x/14/27/9f/14279ff18e3b8a83ffd014b817e182d8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/70/dd/88/70dd880ee8d02d0d36f367c7e32c6907.jpg");
+    background-size: cover;
+  }
+}
+
+/* Metro Boomin */
+.image-17 {
+  background: url("https://i.pinimg.com/564x/d3/c5/06/d3c5061ec91228ae59ab5cf0d78f77a4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/68/5c/03/685c0391a9bc70d0c2a7c765e53bb7f2.jpg");
+    background-size: cover;
+  }
+}
+
+/* Gunna */
+.image-18 {
+  background: url("https://i.pinimg.com/564x/88/27/5e/88275e68ccd1a56aac5e4b195f759dc5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/04/00/63/040063a4b18d30dd13f6d7f671bb3ba2.jpg");
+    background-size: cover;
+  }
+}
+
+/* Joey Bada$$ */
+.image-19 {
+  background: url("https://i.pinimg.com/564x/74/99/f0/7499f01b6fa4927405aacf226fda6954.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/f3/1b/67/f31b67ee182eb578418ffa541f1ab6d6.jpg");
+    background-size: cover;
+  }
+}
+
+/* Drake no.20 */
+.image-20 {
+  background: url("https://i.pinimg.com/564x/b9/93/e0/b993e0da70f9a751629043754385a887.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/eb/49/13/eb4913aa428e87929400155d5b5349a0.jpg");
+    background-size: cover;
+  }
+}
+
+/* Justin Bieber no.21 */
+.image-21 {
+  background: url("https://i.pinimg.com/564x/cb/5e/29/cb5e2955cbb1ecee2245594cfacd89c5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/73/18/60/73186048c3196412f3692458b068ef1d.jpg");
+    background-size: cover;
+  }
+}
+
+/* Robert Patterson no.22 */
+.image-22 {
+  background: url("https://i.pinimg.com/564x/3c/63/86/3c6386c792465fe1da05d9cd54462f9d.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/67/e2/8e/67e28e667517a043bb29d640bb0ba951.jpg");
+    background-size: cover;
+  }
+}
+
+/* Alexa Demie no.23 */
+.image-23 {
+  background: url("https://i.pinimg.com/564x/8f/db/d7/8fdbd73d1af923a7b799962843bd0b18.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/af/79/8b/af798b01fe92217843746657f9b118f6.jpg");
+    background-size: cover;
+  }
+}
+
+/* Beyonce no.24 */
+.image-24 {
+  background: url("https://i.pinimg.com/564x/d3/c8/89/d3c8890433027bc48e45e8c87a84854a.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/1a/6c/e1/1a6ce1f50e1be6689388399842098aae.jpg");
+    background-size: cover;
+  }
+}
+
+/* Doja Cat no.25 */
+.image-25 {
+  background: url("https://i.pinimg.com/564x/c8/42/6f/c8426f78f2d6c75bb3b41532be9394e8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/c8/2a/29/c82a294285d9bb9ec95317f6aff5b4d4.jpg");
+    background-size: cover;
+  }
+}
+
+/* Pi'erre Bourne no.26 */
+.image-26 {
+  background: url("https://i.pinimg.com/564x/af/c9/2c/afc92cd68c5accde96d2ed33fadcf447.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/23/92/fd/2392fd3d4e20790b490fca71a6a4092a.jpg");
+    background-size: cover;
+  }
+}
+
+/* Matthew Williams no.27 */
+.image-27 {
+  background: url("https://i.pinimg.com/564x/1e/4e/f9/1e4ef967520317fd499eb5e5a74398d8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/e4/f6/8f/e4f68fcffa7bd4210e6f6a0aaedece8b.jpg");
+    background-size: cover;
+  }
+}
+
+/* Tinashe no.28 */
+.image-28 {
+  background: url("https://i.pinimg.com/564x/bd/e5/44/bde5449ec9ecc567f87e82d4dcbf929e.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/a3/fe/1c/a3fe1c3a02462db2234998021b4cd02d.jpg");
+    background-size: cover;
+  }
+}
+
+/* Maria Isabel no.29 */
+.image-29 {
+  background: url("https://i.pinimg.com/564x/ff/26/be/ff26beabcd6df89af94367ce560ea910.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/47/72/db/4772db6e04f559dc9e06e2d0d8526a6d.jpg");
+    background-size: cover;
+  }
+}
+
+/* Brent Faiyaz no.30 */
+.image-30 {
+  background: url("https://i.pinimg.com/564x/01/7b/00/017b00a5aa5d796a2efe5c9b863bb235.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/78/e0/f3/78e0f3a5023ba13a715bb87f0932b7b6.jpg");
+    background-size: cover;
+  }
+}
+
+/* Zoe Kravitz no.31 */
+.image-31 {
+  background: url("https://i.pinimg.com/564x/59/0e/e6/590ee6550e93dccecf2284e2ee0a5b84.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/c3/f1/c1/c3f1c1cbaf2a6dc3cbad2e3818fa28d6.jpg");
+    background-size: cover;
+  }
+}
+
+/* Bol Bol no.32 */
+.image-32 {
+  background: url("https://i.pinimg.com/564x/76/17/0b/76170b43760288e33f3bdb879246c44e.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/e5/d9/11/e5d911abf6330dc3222faa78cb86b656.jpg");
+    background-size: cover;
+  }
+}
+
+/* Kelly Oubre no.33 */
+.image-33 {
+  background: url("https://i.pinimg.com/564x/b3/83/54/b38354c359e293fd387a34ba41a4aaaf.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/b3/77/42/b3774223d2d1adb86ca4423e9eb2f751.jpg");
+    background-size: cover;
+  }
+}
+
+/* Zendaya no.34 */
+.image-34 {
+  background: url("https://i.pinimg.com/564x/bc/1a/01/bc1a0132947d19e26267432af21685b6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/73/6b/a9/736ba9b431d6fed892d49958c1a6625c.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Rubi Rose no.35 */
+.image-35 {
+  background: url("https://i.pinimg.com/564x/05/74/b7/0574b772b566842c8ba25ed3d523ba80.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/75/91/44/759144fd45321560cdfcfa633929bc31.jpg");
+    background-size: cover;
+  }
+}
+
+/* Burberry Erry no.36 */
+.image-36 {
+  background: url("https://i.pinimg.com/564x/a3/cb/1a/a3cb1ad6c557c7a76e0533d7fba7def5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/0c/b4/ac/0cb4ac257375b550d9f2b2fbeec8e690.jpg");
+    background-size: cover;
+  }
+}
+
+/* Pusha T no.37 */
+.image-37 {
+  background: url("https://i.pinimg.com/564x/ad/13/57/ad1357c7049a6b55f4bf645c5a658e62.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/f0/eb/71/f0eb71d027473171433333b387655703.jpg");
+    background-size: cover;
+  }
+}
+
+/* Kim Kardashian no.38 */
+.image-38 {
+  background: url("https://i.pinimg.com/564x/90/64/69/906469dd243d71c8c81a0f04a7ce2921.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/ac/cb/46/accb4685ee8b9e617569009422a0650d.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Justine Skye no.39 */
+.image-39 {
+  background: url("https://i.pinimg.com/564x/d2/65/61/d26561e95b209d3cf7ab06f7230ce545.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/27/dd/57/27dd57714026f692180f0e02eee50f8b.jpg");
+    background-size: cover;
+  }
+}
+
+/* Billie Eilish no.40 */
+.image-40 {
+  background: url("https://i.pinimg.com/564x/80/50/c8/8050c81b340527fae72578e26b24e69b.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/736x/5b/e9/b2/5be9b2faf6cc5d7757754ed7c61a780a.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Dominic Fike no.41 */
+.image-41 {
+  background: url("https://i.pinimg.com/564x/cf/11/68/cf1168e92396400560eb586e287da5b3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/9d/1c/6d/9d1c6d2bf12f7261c2b6c9e351ce9b70.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Bad Bunny no.42 */
+.image-42 {
+  background: url("https://i.pinimg.com/564x/cc/f4/50/ccf450fcd79235b28aac27dd090f7d72.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/46/40/b6/4640b63eb4e46b6617eb6a5cc74b5411.jpg");
+    background-size: cover;
+  }
+}
+
+/* Jordan Clarkson no.43 */
+.image-43 {
+  background: url("https://i.pinimg.com/564x/41/60/e1/4160e184b17577363d4f68a41f117e13.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/d6/5a/28/d65a287ede1895812c39c247d62e057b.jpg");
+    background-size: cover;
+  }
+}
+
+/* Chloe Bailey no.44 */
+.image-44 {
+  background: url("https://i.pinimg.com/564x/94/9f/32/949f320025b11c4fd6d19b4b380e9e06.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/0b/9a/a7/0b9aa793fe846a048ada3229bfc5138f.jpg");
+    background-size: cover;
+  }
+}
+
+/* Nilufer Yanya no.45 */
+.image-45 {
+  background: url("https://i.pinimg.com/564x/6d/6a/21/6d6a21217bac97939b469228f8471395.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/50/c2/8d/50c28dd9a57fb3b0baa14fc4df7b0396.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Jayda Cheaves no.46 */
+.image-46 {
+  background: url("https://i.pinimg.com/564x/ab/62/55/ab6255e9a972fb3d2510c8bdbaeb7243.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/77/60/dd/7760dd595e6ba52b78ab538a384aeff2.jpg");
+    background-size: cover;
+  }
+}
+
+/* $not no.47 */
+.image-47 {
+  background: url("https://i.pinimg.com/564x/7a/75/df/7a75df156e81dd8136d78cb93e0d42f2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/98/14/b6/9814b6737a529886f1f0c1e595c65650.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Shai Gilgeous-Alexander no.48 */
+.image-48 {
+  background: url("https://i.pinimg.com/564x/ea/22/ef/ea22eff8828db6ec18e1303dd013b710.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/13/d9/dd/13d9ddd3153f76098996e518de06db6a.jpg");
+    background-size: cover;
+  }
+}
+
+/* Lucius Firmin no.49 */
+.image-49 {
+  background: url("https://i.pinimg.com/564x/37/6e/e0/376ee05bbb7d0adb997fbad9c3fe771b.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/99/8a/c1/998ac1dfba3bde2a8f6bece9e30a8bbf.jpg");
+    background-size: cover;
+  }
+}
+
+/* Karim Benzema no.50 */
+.image-50 {
+  background: url("https://i.pinimg.com/564x/c2/a1/c4/c2a1c4aac2f8063ce53c3825e2b8132c.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/6d/57/be/6d57be7ee70705f5bd2f3d804e15c840.jpg");
+    background-size: cover;
+  }
+}
+
+/* Donald Glover no.51 */
+.image-51 {
+  background: url("https://i.pinimg.com/564x/8e/52/5c/8e525ced2f9a416c96cef26adcfa2bb7.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/97/d9/a4/97d9a400793c6b5521a1d1c6e0627df1.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Yung Miami no.52 */
+.image-52 {
+  background: url("https://i.pinimg.com/564x/c2/43/b2/c243b23bd711fd04d605bbf628ffe181.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/73/89/6e/73896e41f092d1df9380cf593adea956.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* HoYeon Jung no.53 */
+.image-53 {
+  background: url("https://i.pinimg.com/564x/9b/2d/67/9b2d6702d53849cee952d4341ff31298.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/eb/f6/d4/ebf6d4900fc3f442d170aaa6872ee424.jpg");
+    background-size: cover;
+  }
+}
+
+/* Steph Curry no.54 */
+.image-54 {
+  background: url("https://i.pinimg.com/564x/5e/9e/45/5e9e45325d5d6d7f26dc3b2dc9f07b66.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/96/a2/66/96a26605d93d99352a8b5fbd382e6d04.jpg");
+    background-size: cover;
+  }
+}
+
+/* Ben Simmons no.55 */
+.image-55 {
+  background: url("https://i.pinimg.com/564x/29/8d/de/298dde3e64790f01308b2f462f9418eb.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/6d/64/e6/6d64e6bc07d5a5549f3da2f5c6a13796.jpg");
+    background-size: cover;
+  }
+}
+
+/* Lil Baby no.56 */
+.image-56 {
+  background: url("https://i.pinimg.com/564x/1f/16/5c/1f165c7639b7d31161b936bd2764c16f.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/51/bd/3e/51bd3e179c56c2196e5877ab82b67e8a.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Kevin Durant no.57 */
+.image-57 {
+  background: url("https://i.pinimg.com/564x/10/60/a7/1060a7c3dee57ad8ca236beef712bff1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/7a/09/07/7a0907105aa98be09ff558deee376b51.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Naomi Campbell no.58 */
+.image-58 {
+  background: url("https://i.pinimg.com/564x/59/10/a3/5910a3d049a6e94abd2e8ed5b0d22fa7.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/cb/bc/63/cbbc63060ea815a3747823ea57e18649.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Anitta no.59 */
+.image-59 {
+  background: url("https://i.pinimg.com/564x/8a/3f/73/8a3f7334ff198690dce169cee288fb94.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/09/a8/ef/09a8efbb7e7c08ad57f2b04141272f05.jpg");
+    background-size: cover;
+  }
+}
+
+/* Kylie Jenner no.60 */
+.image-60 {
+  background: url("https://i.pinimg.com/564x/48/ff/0c/48ff0c21edda930d94b58e313ef9262b.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/95/17/be/9517beb1794e848d6dd14e9ad6550108.jpg");
+    background-size: cover;
+  }
+}
+
+/* SZA no.61 */
+.image-61 {
+  background: url("https://i.pinimg.com/564x/88/1c/42/881c421a654ceb5e96c921a2acfd5d71.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/35/d7/a1/35d7a189e47b4988e17168d54e1b3de4.jpg");
+    background-size: cover;
+  }
+}
+
+/* Teyana Taylor no.62 */
+.image-62 {
+  background: url("https://i.pinimg.com/564x/3d/e1/05/3de105112b7dd84b6f406ab667768efc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/6c/eb/73/6ceb73c36d5d9b59a55c25c1797a6101.jpg");
+    background-size: cover;
+  }
+}
+
+/* Kid Cudi no.63 */
+.image-63 {
+  background: url("https://i.pinimg.com/564x/ef/c5/12/efc512738a4c7197a8638751f165a2aa.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/da/5b/9c/da5b9c66f71169866757ddae58935479.jpg");
+    background-size: cover;
+  }
+}
+
+/* Tems no.64 */
+.image-64 {
+  background: url("https://i.pinimg.com/564x/c9/3b/b7/c93bb799527147eefd12792cf89d474e.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/7b/a4/b3/7ba4b35a80b8787a539d657d6afb3e7e.jpg");
+    background-size: cover;
+  }
+}
+
+/* Jordan Poole no.65 */
+.image-65 {
+  background: url("https://i.pinimg.com/564x/1b/1e/d7/1b1ed71a76178fe5c9d3311f09ec5fd6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/39/62/c1/3962c175ac6ddb5e868626d2d7a653e2.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* De'arra no.66 */
+.image-66 {
+  background: url("https://i.pinimg.com/564x/fe/e4/b2/fee4b2f9ff3452f87563901d6b241ef4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/ea/b4/1c/eab41c460923cbd36d9cab49fe54485f.jpg");
+    background-size: cover;
+  }
+}
+
+/* Skepta no.67 */
+.image-67 {
+  background: url("https://i.pinimg.com/564x/d4/a1/39/d4a139d79e8973c8dda3e5344ceef984.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/9c/bd/88/9cbd88057b2523d45cd2710200708273.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Megan Thee Stallion no.68 */
+.image-68 {
+  background: url("https://i.pinimg.com/564x/7c/06/fc/7c06fc73eff21b602a029240ab5c93d1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/a7/d9/80/a7d980d8e25cc85a64eb4ec246307114.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Nia Sultana no.69 */
+.image-69 {
+  background: url("https://i.pinimg.com/564x/0d/ad/4a/0dad4a39824812dad37a249a2ce40ebc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/b6/63/4e/b6634e8a2aa2f24d34935ef0f1309f64.jpg");
+    background-size: cover;
+  }
+}
+
+/* Kali Uchis no.70 */
+.image-70 {
+  background: url("https://i.pinimg.com/564x/c4/cb/b5/c4cbb59c0c308d83228b12e515282edc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/cd/a6/9c/cda69c2e952bcc04bb87914eb8220de9.jpg");
+    background-size: cover;
+  }
+}
+
+/* Lena Mahfouf no.71 */
+.image-71 {
+  background: url("https://i.pinimg.com/564x/37/bf/05/37bf051ab297fcb868fafd67991f481c.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/ca/83/a0/ca83a089702d91b3a4a5f5cb8d7a96e8.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Bloody Osiris no.72 */
+.image-72 {
+  background: url("https://i.pinimg.com/564x/a1/73/32/a17332ac96dd825e01f1b9f217d4597b.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/db/5d/a9/db5da97b586cbe191472205e1ba39f31.jpg");
+    background-size: cover;
+  }
+}
+
+/* Nickeil Alexander-Walker no.73 */
+.image-73 {
+  background: url("https://i.pinimg.com/564x/6a/77/6a/6a776a5c59254871a199a1cb72cbc8b3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/95/61/c2/9561c229fd555e879e7ccd8f193168e7.jpg");
+    background-size: cover;
+  }
+}
+
+/* Jayson Tatum no.74 */
+.image-74 {
+  background: url("https://i.pinimg.com/564x/07/59/8c/07598c388e8850e05e941f0de1111fda.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/08/16/d3/0816d31653379eb6aa5c6f338006cdf0.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Amina Muaddi no.75 */
+.image-75 {
+  background: url("https://i.pinimg.com/564x/e4/45/9f/e4459f048c89796a4243bf7ca019e220.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/dd/ec/03/ddec03bd660684650a679528d58713ae.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Jorja Smith no.76 */
+.image-76 {
+  background: url("https://i.pinimg.com/564x/dc/b2/c7/dcb2c7f5f785da391ae61cb85f8ff118.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/b4/14/4a/b4144a420b26e55ac1ec5a8b922f4327.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Terance Mann no.77 */
+.image-77 {
+  background: url("https://i.pinimg.com/564x/24/c8/2f/24c82f5f72b865239edf0af1e87226f6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/24/13/c7/2413c7e6d10a977ee282bc728b2dd675.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* SoFaygo no.78 */
+.image-78 {
+  background: url("https://i.pinimg.com/564x/db/af/f9/dbaff92f29207bc00f3e67047a1fb9dc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/29/70/73/2970735932c61bf3c7689766caa11430.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Marvin Korang no.79 */
+.image-79 {
+  background: url("https://i.pinimg.com/564x/b9/8c/f1/b98cf1c52da44e858f0cd7e9fa8f495f.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/7a/c9/d8/7ac9d8e2eb79d5431c0de1a09827f921.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Paloma Mami no.80 */
+.image-80 {
+  background: url("https://i.pinimg.com/564x/e9/b2/2d/e9b22d8c3d9ac0cc883a82661d948360.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/5a/34/0d/5a340d8f8fcc70ff24e5863fbf8af42e.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Jennie Kim no.81 */
+.image-81 {
+  background: url("https://i.pinimg.com/564x/53/8d/1d/538d1d29e792b73fcac7fc83f0e77648.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/ea/e6/75/eae6759d4aecedc61ac3e28386ee0818.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Jisoo no.82 */
+.image-82 {
+  background: url("https://i.pinimg.com/564x/53/14/1a/53141a73440f95a920a3cb7bdd73fdb6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/5e/ae/70/5eae70b2e36f0b7596f839a7339de5ed.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Lil Uzi Vert no.83 */
+.image-83 {
+  background: url("https://i.pinimg.com/564x/7e/86/db/7e86dbf176c9f681a908177bb17c26cc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/56/cb/a5/56cba5053e1b45711037bc79ae181eb9.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Central Cee no.84 */
+.image-84 {
+  background: url("https://i.pinimg.com/564x/e3/4c/e6/e34ce636b3efc4c92dba4cdec5bf2a50.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/fa/30/45/fa304535366602f312cd7960185c2be0.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Jadon Grundy no.85 */
+.image-85 {
+  background: url("https://i.pinimg.com/564x/7c/96/e9/7c96e9b31eea08a54e9e7b92deb51254.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/736x/0f/2a/22/0f2a2232d0ba9bd9087d14c067b43f63.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Wisdom Kaye no.86 */
+.image-86 {
+  background: url("https://i.pinimg.com/564x/24/9b/bd/249bbd70afe37b964117b6d9228521df.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/0f/e3/cd/0fe3cd3807266be95ff7b54b647e2746.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Rema no.87 */
+.image-87 {
+  background: url("https://i.pinimg.com/564x/30/7c/be/307cbe4a1782c978af1b265d4fd9c25c.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/e3/60/8a/e3608ac0f8a4eade75f1787a21815722.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Destroy Lonely no.88 */
+.image-88 {
+  background: url("https://i.pinimg.com/564x/a8/fb/d5/a8fbd5e166be218f1f8414c7c620c9e8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/ab/0b/c0/ab0bc036249f31ff0d4a29ead3887a78.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Ayra Starr no.89 */
+.image-89 {
+  background: url("https://i.pinimg.com/564x/d9/1e/74/d91e74bd812bc25285bb0e1fef8326e3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/93/ba/dd/93badd00b34175b1a8730b54d4f08067.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Lil Nas X no.90 */
+.image-90 {
+  background: url("https://i.pinimg.com/564x/90/b8/d1/90b8d1219b11562c0fe6782b14117743.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/26/aa/2c/26aa2c65b980fbc79b9fd54d62e82e8e.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Sana Gilani no.91 */
+.image-91 {
+  background: url("https://i.pinimg.com/564x/eb/8e/39/eb8e39a7faf1f416b8539ae266bc8d01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/41/71/cf/4171cf2b9f01bf6b3aa5c3685d8ee0d4.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* UnoTheActivist no.92 */
+.image-92 {
+  background: url("https://i.pinimg.com/564x/3d/a1/23/3da12348df08f1adb5328bca77ca562d.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/4d/38/13/4d38135e7649e970c99c2a1ac7e6eac1.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Josh Christopher no.93 */
+.image-93 {
+  background: url("https://i.pinimg.com/564x/1c/50/b1/1c50b1c8744f7fdb06f2caa50f917470.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/1c/07/9b/1c079b9626acc154b4ac85b151f05d1a.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Smino no.94 */
+.image-94 {
+  background: url("https://i.pinimg.com/564x/b4/4f/ad/b44fadf82d518cefbc40e205bfc71649.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/87/ca/62/87ca62b25e9334d0f37b6347d1508032.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Koleen Diaz no.95 */
+.image-95 {
+  background: url("https://i.pinimg.com/564x/73/8b/cb/738bcb71a16c05264750d903d86c812c.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/a5/9e/ea/a59eeaad1100adb0ac6043b0a4cccee9.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Ravyn Lenae no.96 */
+.image-96 {
+  background: url("https://i.pinimg.com/564x/4f/3f/f4/4f3ff49cb873a7b3a4262186ce4605f8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/b6/67/80/b667808cb0ba5c1011d8733ad768a246.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Sydney Sweeney no.97 */
+.image-97 {
+  background: url("https://i.pinimg.com/564x/53/af/dd/53afddbde48cffc55a7ac5ae7c243f68.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/97/a9/49/97a949bc5f5124e33fe97d61c6e8e7ae.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* KaySZN no.98 */
+.image-98 {
+  background: url("https://i.pinimg.com/564x/3a/4b/86/3a4b864e00a78a96467d37eee117130e.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/736x/05/82/9f/05829fdfbb77f7966e850d2bfde9b621.jpg");
+    background-size: cover;
+  }
+}
+
+/* Ice Spice no.99 */
+.image-99 {
+  background: url("https://i.pinimg.com/564x/7f/0c/ef/7f0cef9ed1548ac4ab85a913b49e071b.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/13/ac/77/13ac7704814bdf9730454f0dd4e95ed7.jpg");
+    background-size: cover;
+  }
+}
+
+/* Yung Aly no.100 */
+.image-100 {
+  background: url("https://i.pinimg.com/564x/93/43/f5/9343f56eaa16c2a0e870b4a68d44c361.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/43/91/90/43919042b55f2b55e0a7e9e88c586d5f.jpg");
+    background-size: cover;
+  }
+}
+
+/* Jenevieve no.101 */
+.image-101 {
+  background: url("https://i.pinimg.com/564x/4e/ee/4f/4eee4fb578f0a79a30be18efc82d1721.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/c0/70/ca/c070cac5b4bac3965a5ba64c4b9302ce.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Kelela no.102 */
+.image-102 {
+  background: url("https://i.pinimg.com/564x/95/50/16/955016c4388a3e49de83e81111ef64e6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/13/b7/3a/13b73aca1f29698a3f597229e1c8fc4f.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Yoon Ahn no.103 */
+.image-103 {
+  background: url("https://i.pinimg.com/564x/58/7c/06/587c067d5f1c7424cc820d752d850d48.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/bb/b8/7e/bbb87eda3836b2932f735268b2cde0f8.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Keke Palmer no.104 */
+.image-104 {
+  background: url("https://i.pinimg.com/564x/a6/5c/71/a65c719a636672f320492626f9d3b69f.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/52/58/fa/5258fac7ba249c05aed8d5df6da26c36.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Lil Yachty no.105 */
+.image-105 {
+  background: url("https://i.pinimg.com/564x/33/86/7c/33867c2ba01336c4aec70681cf83986b.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/54/a5/7a/54a57a430188d75e3d093e92e1e2b006.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* DDG no.106 */
+.image-106 {
+  background: url("https://i.pinimg.com/564x/01/50/fe/0150fec52ae0724c536cc42fb19a6597.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/74/4e/98/744e98eadbe33ddc689a218da4f4bcdc.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Homixide Beno no.107 */
+.image-107 {
+  background: url("https://i.pinimg.com/564x/59/1c/d4/591cd4d5e65f0d825255beac32192660.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/cf/4d/17/cf4d17afc12aecd4d743b98856e7af90.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Gab3 no.108 */
+.image-108 {
+  background: url("https://i.pinimg.com/564x/81/af/0d/81af0dc3c7bd4d69c1cff52eb020be4a.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/9d/8b/87/9d8b879b995bd4cbc482a750b35f88fe.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Latto no.109 */
+.image-109 {
+  background: url("https://i.pinimg.com/564x/76/61/7d/76617d848588fbcb34061e051075c865.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/84/45/2a/84452a98e03c28d6ea5847559e38a672.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Bella Hadid no.110 */
+.image-110 {
+  background: url("https://i.pinimg.com/564x/da/3f/10/da3f1078e9cea9b2759c89eee47795ec.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/20/b1/0d/20b10d869c7a7893610f74af96ac4c03.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Uncle Waffles no.111 */
+.image-111 {
+  background: url("https://i.pinimg.com/564x/e6/68/5c/e6685cd324664436aaf7133a5f2b0cc2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/9d/8c/2a/9d8c2a0b1d09742c1fbd8ffe48dec9ac.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Lancey Foux no.112 */
+.image-112 {
+  background: url("https://i.pinimg.com/564x/38/12/42/381242bc7fbf2a6d66ab08be621a2d8a.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/10/e9/9c/10e99cfeec1da25268e23e7a038ad715.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Hailey Bieber no.113 */
+.image-113 {
+  background: url("https://i.pinimg.com/564x/96/b3/5e/96b35e4468aa5541a7b59cbf4409b9d0.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/99/53/1e/99531e258fec3002191f1283b7dbb3a5.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* NotKillNico no.114 */
+.image-114 {
+  background: url("https://i.pinimg.com/564x/0d/e1/8a/0de18a639ee978350541dd74c4196f43.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/83/79/2e/83792e40a076c7a7a4ccf275fe166142.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Yoshi no.115 */
+.image-115 {
+  background: url("https://i.pinimg.com/564x/a6/b8/12/a6b81207d0a0ce835eede949b3d48246.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/45/76/06/457606c808245d3211b81b313672f9e8.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* 21 Savage no.116 */
+.image-116 {
+  background: url("https://i.pinimg.com/564x/fa/c1/4f/fac14fd0a12f2819c153f9b86669aab5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/e1/2f/88/e12f88d3a82bbbcc5be43c7eadbc1d88.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Mez Afram no.117 */
+.image-117 {
+  background: url("https://i.pinimg.com/564x/f8/6f/f7/f86ff788ca859d450ad6c0bad3fafe10.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/ac/ae/6e/acae6ee918d467538585b6ababf78961.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Aliyah's Interlude no.118 */
+.image-118 {
+  background: url("https://i.pinimg.com/564x/02/97/34/02973464e5a9fe129c33afd2f6d7b0e1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/3a/fd/8a/3afd8a4421b51d05c6d1b4131d832fb9.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Burna Boy no.119 */
+.image-119 {
+  background: url("https://i.pinimg.com/564x/fd/84/40/fd844007364b7dd9b62da864b965cea1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/c1/51/74/c15174b717af10ed200d4527e68f3714.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Wizkid no.120 */
+.image-120 {
+  background: url("https://i.pinimg.com/564x/84/ed/e8/84ede83b9e6bbd0f3f6dc1e21b5a67f4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/5d/c1/fb/5dc1fbae22c104a5b0089de54b16b93b.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Mitch Modes no.121 */
+.image-121 {
+  background: url("https://i.pinimg.com/564x/64/41/5c/64415cdb3048b48fd2a20d645ff6ccf8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/93/d6/de/93d6de06d1a2022884d7f5d6970a62e2.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Rafael Leao no.122 */
+.image-122 {
+  background: url("https://i.pinimg.com/564x/c4/d0/6d/c4d06d5237572e2ea401fdaca382b15b.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/7d/75/9b/7d759ba1414d50f1fdc26961d446eb2a.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* FKA Twigs no.123 */
+.image-123 {
+  background: url("https://i.pinimg.com/564x/e4/51/6f/e4516fc07ed22dce423d4cb706f8cb4e.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/20/4b/1c/204b1c6f8a9ea42511188e092adc8d10.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Eli Sama no.124 */
+.image-124 {
+  background: url("https://i.pinimg.com/564x/e6/03/26/e60326515a729f33827461403feb85ac.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/94/ca/57/94ca57251dcaa1ddc1fe9592312a5326.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Dua Lipa no.125 */
+.image-125 {
+  background: url("https://i.pinimg.com/564x/31/ab/d2/31abd208f30de954fa58e4ee97a48a9e.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/2a/09/49/2a094970b2ef6373adc77ba15b080865.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Savannah James no.126 */
+.image-126 {
+  background: url("https://i.pinimg.com/564x/cf/37/b1/cf37b137f0c3f128f3567d850c6fff6f.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/38/53/87/385387d6e6950fbd73a74a6c4d20a546.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Juliana Nalu no.127 */
+.image-127 {
+  background: url("https://i.pinimg.com/564x/96/6d/a6/966da6d7e21d2beff8c400a2752caa0b.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/98/17/a7/9817a7ad89648f7b4baa8edcf7083b49.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Wiz Khalifa no.128 */
+.image-128 {
+  background: url("https://i.pinimg.com/564x/b9/b4/d1/b9b4d1c0ef18de327bc426d3135fe2e4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/89/0a/65/890a65aa9e463c766824ae6f6acc2c60.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Harry Styles no.129 */
+.image-129 {
+  background: url("https://i.pinimg.com/564x/bc/71/f1/bc71f1a632c0322a62f61ed1de8903fc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/15/1d/c8/151dc834d24a8a0a04ddb94af8e73d8d.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Aurum Amare no.130 */
+.image-130 {
+  background: url("https://i.pinimg.com/564x/d7/d5/b9/d7d5b9ae6b5b35f2adab4e6da8fc831d.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/5a/1f/ab/5a1fab5d3fae7188596c98812ddf9f8a.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Adut Akech no.131 */
+.image-131 {
+  background: url("https://i.pinimg.com/564x/50/66/a3/5066a3fb1a1e89cddf611a647c8d345b.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/d3/e0/0f/d3e00f289ca09298981429c03824fabe.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Steve Lacy no.132 */
+.image-132 {
+  background: url("https://i.pinimg.com/564x/8f/d3/b7/8fd3b73ed8e5c4ac6f656521d82efb34.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/98/ac/40/98ac403d9c0609fc1c6d4c84b0e4ab7b.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* LeBron James no.133 */
+.image-133 {
+  background: url("https://i.pinimg.com/564x/30/e6/ee/30e6ee6b31a782582a1ab28f362c080a.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/43/d3/9e/43d39e1ad1fabb59af867600ff09ef12.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* JAY-Z no.134 */
+.image-134 {
+  background: url("https://i.pinimg.com/564x/fa/5c/07/fa5c074d67b06a63e2ae2f9ad14be93a.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/c8/9b/37/c89b370ee4f174519dbc9600d742c102.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Evan Mock no.135 */
+.image-135 {
+  background: url("https://i.pinimg.com/564x/93/85/00/9385001ba280838f5e155481c03b6641.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/70/40/24/704024624e85230eb3d59468fefd36e5.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Timothee Chalamet no.136 */
+.image-136 {
+  background: url("https://i.pinimg.com/564x/e3/86/20/e3862030e469f85c22cf790986f41cda.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/0c/56/83/0c56832aebdb16be9dd96b781971b11d.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* A$AP Ferg no.137 */
+.image-137 {
+  background: url("https://i.pinimg.com/564x/b3/f2/06/b3f2065441596eb61ceef0c29492c627.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/9f/1b/8d/9f1b8d4d54b352dd6ed28ce7e7f92391.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Lizzo no.138 */
+.image-138 {
+  background: url("https://i.pinimg.com/564x/2a/df/48/2adf48a7be000ae10d11b147f3fa6fd4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/72/a9/bd/72a9bd51e344bf10d3dee1e29baf20da.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Jordyn Lucas no.139 */
+.image-139 {
+  background: url("https://i.pinimg.com/564x/17/be/cf/17becf5a92f262bfbb316dcf0025dc90.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/f4/02/8a/f4028a7fb6e47d6255a9033cc7630258.jpg");
+    background-size: cover;
+  }
+}
+
+/* Olivia Rodrigo no.140 */
+.image-140 {
+  background: url("https://i.pinimg.com/564x/38/d7/b7/38d7b76dbe03e395dc500508a61f753a.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/64/10/54/641054ae14c0111e7cc37db6d600ea32.jpg");
+    background-size: cover;
+  }
+}
+
+
+/* Tyla no.141 */
+.image-141 {
+  background: url("https://i.pinimg.com/564x/88/16/1a/88161a44f6af40f01ddf66802f1bdbf6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/94/c9/f3/94c9f3bddcbda3a3bc7aa48abaca2fb4.jpg");
+    background-size: cover;
+  }
+}
+
+
+
+/* This section is for the side text */
+.side-text {
+  width: 500px;
+  gap: 40px;
+}
+
+/* This section houses the name of the artist */
+.artist-name {
+  text-align: center;
+  justify-content: center;
+  margin-top: 90px; /* Hmmm */
+  
+  h3 {
+    font-size: 25px;
+  }
+}
+
+/* Credits Section */
+.credits {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+}
+
+/* CTA Section */
+
+/* Separating the NYT PNG from The Homepage Link */
+.second-space {
+  display: flex;
+  gap: 930px; /* RWD! */
+}
+
+.bottom-section {
+  height: 500px;
+}
+
+.second-png {
+  float: left;
+}
+
+.homepage-link {
+  display: flex;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  
+  a {
+    color: grey;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 1000px) {
+    transform: translateX(-740%);
+  }
+  
+  @media (max-width: $laptop) {
+    transform: translateX(-750%);
+  }
+  
+  @media (max-width: $desktop) {
+    transform: translateX(-750%);
+  }
+}
+
+.bottom-hyperlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  
+  li, a {
+    color: grey;
+    text-decoration: none;
+    list-style: none;
+    transform: translateY(270%);
+  }
+}
+
+.bottom-titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -22%;/*RWD*/
+  transform: translateX(100%);
+}
+
+
+.nyt-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.accessories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 10px;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  a {
+    color: grey;
+    text-decoration: none;
+  }
+}
+
+.comment-button {
+  margin-bottom: 30px;
+}
+
+
+.style-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.style-links {
+  margin-top: 20px;
+  width: 700px;
+  
+  ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  }
+}
+
+
+.sub-buttons {
+  margin-bottom: 90px;
+}
+
+/* Blue-button style */
+.blue-button {
+  backface-visibility: hidden;
+  background: #332cf2;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 1rem 1.25rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 500px;
+  height: 50px;
+  text-align: center;
+}
+
+.blue-button:disabled {
+  color: #787878;
+  cursor: auto;
+}
+
+.blue-button:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.blue-button:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.blue-button:focus {
+  outline: 0 solid transparent;
+}
+
+.blue-button:focus:before {
+  border-width: .125rem;
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.blue-button:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.blue-button:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
+/* Buttons */
+.petit-buttons {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.petit-buttons:focus {
+  color: #171e29;
+}
+
+.petit-buttons:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.petit-buttons:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .petit-buttons {
+    min-width: 140px;
+  }
+}
+
+/* This is for the credits section pertaining to my artistry */
+.e-benny {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 25px;
+  
+  p, a {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+.style-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* This row is for the second list of dynamic images */
+.second-dynamic-images {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* Images for Balenciaga */
+.image-142 {
+  background: url("https://i.pinimg.com/564x/89/ae/00/89ae00d0a1b422f72d7a105d5d706909.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/736x/91/2c/4f/912c4f3545db90cad1d45a6df1a29a4b.jpg");
+    background-size: cover;
+  }
+}
+
+/* This div places all the separate components in flexbox */
+.image-text-combo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Images for Dior */
+.image-144 {
+  background: url("https://i.pinimg.com/564x/fb/ce/d5/fbced5efa723d4067e8c2c30aaae6715.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/51/69/ee/5169eeb9e130aa86714f70d05f04cec4.jpg");
+    background-size: cover;
+  }
+}
+
+/*Images for Louis Vuitton */
+.image-145 {
+  background: url("https://i.pinimg.com/564x/7b/71/9b/7b719bdf3b0e1c15b3a5455a5c96a156.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/9b/8e/e4/9b8ee46591919387fc990af6d6a39051.jpg");
+    background-size: cover;
+  }
+}
+
+/* This is for the bottom row of dynamic images */
+.third-dynamic-images {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* Images for Maison Margiela */
+.image-146 {
+  background: url("https://i.pinimg.com/564x/75/46/53/75465315db79caa1f50be4bb156de39c.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/7a/88/5e/7a885eaa428348d00f4177275866238f.jpg");
+    background-size: cover;
+  }
+}
+
+/* Images for Rick Owens */
+.image-147 {
+  background: url("https://i.pinimg.com/564x/c4/80/e4/c480e4c43a81ae0e1819dcbf65459e73.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/40/83/41/408341539aa44210011c6b09c97f0d0f.jpg");
+    background-size: cover;
+  }
+}
+
+/* Images for Schiaparelli */
+.image-148 {
+  background: url("https://i.pinimg.com/564x/0e/0b/d0/0e0bd0986b6e1ac78ebb36246eeba25e.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover {
+    background: url("https://i.pinimg.com/564x/27/34/75/273475211d62c6839ecdb9f2041126ad.jpg");
+    background-size: cover;
+  }
+}
+
+/* The figcaptions are supposed to be centered right underneath the div */
+.second-figcaption {
+  text-align: center;
+}
